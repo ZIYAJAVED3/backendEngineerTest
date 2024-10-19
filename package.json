@@ -1,0 +1,19 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:backend": "cd backend && npm start",
+    "start:frontend": "cd frontend && npm start",
+    "install:backend": "cd backend && npm i",
+    "install:frontend": "cd frontend && npm i",
+    "start": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "install": "concurrently \"npm run install:backend\" \"npm run install:frontend\""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
